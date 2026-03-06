@@ -6,12 +6,12 @@
 
 :root {
     --primary-color: #000e0f;
-    --secondary-color:#01070c ;
-    --color-tertiary: #964734;
-    --accent1-color:#56b3b9c9;
-    --accent2-color:#afdde5;
+    --secondary-color:#964734;
+    --color-tertiary:#ffffff ;
+    --accent1-color:#56b2b95e;
+    --accent2-color:#afdde55e;
     --accent3-color:#ffffff;
-    --accent4-color:#00d9ff;
+    --accent4-color:#000000;
     --border-thin: 1px solid rgb(0 0 0/0.2);
     --border-thick: 2px solid rgb(0 0 0/0.2);
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -29,12 +29,11 @@ main,
 footer {
     width: 800px;
     margin: 0 auto;
-
 }
 
 header,footer {
     background-color: var(--accent2-color);
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 .header-content{
     height: 100px;
@@ -43,14 +42,20 @@ header nav ul {
     display: flex;
     justify-content:space-around;
     align-items: center;
-    padding: 10px 0;
+    padding: 12px 0;
     background-color: var(--accent4-color);
 }
 header a {
     text-decoration: none;
     color: var(--color-tertiary);
-    font-size: larger;
-    
+    font-size: larger;    
+}
+header a:hover{
+    padding: 8px 12px;
+    border: var(--border-thin);
+    border-radius:50px;
+    color: var(--secondary-color);
+    background-color: var(--accent3-color);
 }
 
 main{
