@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - NWEKE JOSHUA</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - NWEKE JOSHUA. A home page design that will serve as my wdd131 course landing page. The page contains information about me and links to other project that will be carried out during the course.">
+    <meta name="author" content="Joshua Nweke">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131|Nweke Joshua</h1>
+   <header>
+       <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <l1><a href="http://www.linkedin.com/in/nwekejoshua">LinkedIn</a></l1>
+                <l1><a href="https://byupw.instructure.com/">I-Learn</a></l1>
+                <l1><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></l1>
+                <l1><a href="">Final Project</a></l1>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <H1 class="name">Nweke Joshua</H1>
+        <div class="main-content">
+
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about-me">      
+                    
+                    <img src="images/my-img.png" alt="A picture of myself">                
+                    <span>My name is Nweke Joshua but my friends call me Captain Josh, this is because of my passion for the Military. I am a member of The Church of Jesus Christ of Latter-Days Saints, embracing the gospel is the best decision i have taken and it has been a blessing to me. I love watching military parades video.</span>
+                </div>
+                <div class="float-fix"></div>
+                <h3>Lagos, Nigeria</h3>
+                <div class="country">   
+                    <figure>
+                        <img src="images/nigeria-flag.jpg" alt="Nigeria Flag">
+                        <figcaption>Nigeria Flag</figcaption>
+                    </figure>
+                    <p>Nigeria is a large west African nation known for it's geographic diversity, ranging from coastal regions in the south to savanna and semi arid zones in the north. The country is extremely diverse, with hundreds of ethnic groups including Hausa, Yoruba, Igbo, and many others , each contributing uniquely to Nigeria's languages, traditions, and cultural expression such as music, festivals and cuisine.</p>
+                </div>
+                <div class="float-fix"></div>
+            </section>
+
+            <section class="card card-mod" >
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://dev.to/">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                    <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+                </ul>
+            </section>
+        </div>
+       
+
+    </main>
+    <footer>
+        
+            <p id="copyright">©️<span id="currentyear"></span>🌺 Nweke Joshua 🌺 Nigeria</p>
+            <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
