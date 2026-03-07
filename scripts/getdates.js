@@ -2,9 +2,9 @@
 
   document.getElementById('currentyear').textContent = new Date().getFullYear();
 
-  document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
+  document.getElementById('lastmodified').textContent = `Last modified: ${document.lastModified}`;
 
-//   document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+//   document.getElementById('lastmodified').textContent = "Last modified: " + document.lastModified;
 
-// const lastMod = document.querySelector("#lastModified")
+// const lastMod = document.querySelector("#lastmodified")
 // lastMod.textContent = document.lastModified

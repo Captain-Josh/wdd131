@@ -164,6 +164,6 @@ footer{
     background-color: var(--accent1-color);
     color: var(--color-tertiary);
 }
-#lastModified{
+#lastmodified{
     color: var(--secondary-color);
 }
