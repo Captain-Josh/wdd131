@@ -39,6 +39,9 @@ nav ul{
 .nav-mobile{
     display: none;
 }
+.nav-mobile-link{
+    display: none;
+}
 
 
 .figure-content {
