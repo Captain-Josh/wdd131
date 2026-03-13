@@ -1,10 +1,17 @@
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.querySelector("#lastmodified").textContent =  `Last Modified: ${document.lastModified}`
 
-const hamBurger = document.querySelector("#menu");
-const navigation = document.querySelector("nav");
+// Animated hamburger menu starts here
 
-hamBurger.addEventListener("click", function(){
-    navigation.classList.toggle("hamburger");
-    hamBurger.classList.toggle("hamburger");   
-});
+const hamburger = document.querySelector(".hamburger")
+const mobileLinks = document.querySelector(".nav-mobile-link")
+
+hamburger.addEventListener("click", function(){
+    hamburger.classList.toggle('crossburger')
+    mobileLinks.classList.toggle("showmobilemenu")
+})
+
+
+// Animated hamburger menu ends here
+
+
