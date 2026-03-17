@@ -62,10 +62,6 @@ header{
     padding: 6px;
 }
 
-.data label,.weather label {
-    font-weight: bold;
-}
-
 .data p span, .weather p span{
     justify-self: start;
 }
