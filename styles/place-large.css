@@ -1,6 +1,9 @@
 @media screen and (min-width: 700px) {
+    :root{
+        --accent3-color:#ffffff;
+    }
 
-   .main-content{
+    .main-content{
         position: relative;
     }
 
@@ -10,8 +13,8 @@
     
    .data,.weather{
         width: 300px;
-        background-color: white;
-        color: black;
+        background-color: var(--accent3-color);
+        color: var(--secondary-color);
         font-weight: 700;
         opacity: 0.8;
         padding-top: 100px !important;
@@ -19,8 +22,8 @@
     }
 
    .data h2, .weather h2{
-        background-color: navy;
-        color: white;
+        background-color: var(--accent1-color);
+        color: var(--primary-color);
         padding: 12px;
         text-align: left;
         position: absolute;

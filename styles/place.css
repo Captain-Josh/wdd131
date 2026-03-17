@@ -3,18 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --primary-color: #ffffff;
+    --secondary-color:#000000;
+    --tertiary-color:#FFD700 ;
+    --accent1-color:#000080;
+    --accent2-color:#FFD700;
+    --body-font: "Roboto", sans-serif;
+}
+
 
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: var(--body-font);
 }
 
 header,footer{
-    background-color: navy;
-    color: white;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 .image {
-    background-color: navy;
+    background-color: var(--accent1-color);
     padding-bottom: 4px;
 }
 
@@ -22,7 +31,7 @@ picture img{
     padding-top: 15px;
     width: 100%;
     height: auto;
-    background-color: gold;
+    background-color: var(--accent2-color);
 }
 
 
@@ -72,5 +81,5 @@ footer{
 }
 
 #lastmodified{
-    color: gold;
+    color: var(--tertiary-color);
 }
