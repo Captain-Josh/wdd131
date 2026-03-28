@@ -157,7 +157,6 @@ homeTemple.addEventListener("click", () => {
 
 });
 
-
 const oldTemple = document.querySelector(".old-temple");
 oldTemple.addEventListener("click", () => {
     const filteredOld= temples.filter((temple) => new Date(temple.dedicated).getFullYear()< 1990 );

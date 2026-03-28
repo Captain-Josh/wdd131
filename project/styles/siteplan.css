@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+main{
+    width: 70%;
+    margin: 0 auto;
+}
+
+header,footer{
+    text-align: center;
+    background-color: #000080;
+    color: white;
+    padding: 15px 0 15px 0;
+}
+
+strong{
+    color:#050533;
+}
+
+.site-name a:visited{
+    color: #000080;
+}
+main h1, h2 , h3{
+    color: #050533;
+    text-align: center;
+    margin: 10px;
+}
+
+main p{
+    text-align: justify;
+    color: #012b0d;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    max-width: 100ch;
+}
+
+main p::first-letter{
+    font-size:larger;
+    font-weight: 500;
+}
+
+.wireframes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+.lastmodified{
+    color: #ffd700;
+}
