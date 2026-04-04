@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="author" content="Nweke Joshua">
+    <meta name="description" content="A product review form page showing good design principles, meet specific field raand includes a submission confirmation with a counter.">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="thanks.html" method="get" class="prf">
+            <label>Product name
+                <select>
+                    <option value="" disabled selected>Choose a Product</option>
+                    <option value=""></option>
+                </select>
+            </label>
+            <div class="star-rating">
+                <label>Overall Ratting</label>
+                <label>⭐<input type="radio" id="onestar" name="rating" value="1" required></label>
+                <label>⭐⭐<input type="radio" id="twostar" name="rating" value="2" required></label>
+                <label>⭐⭐⭐<input type="radio" id="threestar" name="rating" value="3" required></label>
+                <label>⭐⭐⭐⭐<input type="radio" id="fourstar" name="rating" value="4" required></label>
+                <label>⭐⭐⭐⭐⭐<input type="radio" id="fivestar" name="rating" value="5" required></label>
+            </div>
+           <label>Date of Installation <input id="date" name="installationDate" type="date"></label>
+           <div>Which features did you find useful in the product? <span>Check all that apply</span></div>
+           <label><input type="checkbox" name="durability" value="yes"> Durability</label>
+           <label><input type="checkbox" name="use" value="yes"> Ease of Use</label>
+           <label><input type="checkbox" name="performance" value="yes"> Performance</label>
+           <label><input type="checkbox" name="design" value="yes"> Design</label>
+           <label>Written Review (Optional)<textarea name="review" id="review" placeholder="Please write your review!"></textarea></label>
+           <label>Your Name (Optional)<input type="text" name="fullname"></label>
+           <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>©️<span class="currentyear"></span> 🌺Nweke Joshua🌺 Nigeria</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>
