@@ -1,0 +1,29 @@
+@media only screen and (min-width: 600px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	main {
+        min-width: 600px;
+	}
+
+    .prf input[type="text"],
+    .prf input[type="date"],
+    .prf textarea,
+    .prf select{
+        padding: 15px;
+        max-width: 800px;
+       
+    }
+    .prf textarea{
+        height: 100px;
+    }
+
+
+
+    .prf input[type="submit"]{
+        width: 96%;
+        max-width: 800px;
+    }
+
+}

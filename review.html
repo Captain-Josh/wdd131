@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="author" content="Nweke Joshua">
+    <meta name="description" content="A product review form page showing good design principles, meet specific field and includes a submission confirmation with a counter.">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="review-page">
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main class="sub-content">
+            <h1>SUBMISSION CONFIRMATION</h1>
+            <p>Thanks for taking your time to fill out the product review page. Your feedback means a lot to us as it will allow us do things better.</p>
+            <h2 id="count"></h2>
+    </main>
+    <footer>
+        <p>©️<strong class="currentyear"></strong> 🌺Nweke Joshua🌺 Nigeria</p>
+        <p id="lastmodified"></p>
+    </footer>
+
+    <script>
+    document.querySelector(".currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastmodified").textContent = `Last Modified: ${document.lastModified}`;
+
+  
+    let reviewCount = localStorage.getItem("reviewCount");
+
+    if(reviewCount === null){
+      reviewCount =1;
+    }
+    else{
+      reviewCount = Number(reviewCount) +1;
+    }
+   localStorage.setItem("reviewCount", reviewCount);
+
+   const countDisplay = document.getElementById("count");
+   countDisplay.innerHTML = `You have done ${reviewCount} reviews`;
+    </script>
+</body>
+</html>

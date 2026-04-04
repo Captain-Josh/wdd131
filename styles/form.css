@@ -1,9 +1,109 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 body{
     font-family: "Roboto", sans-serif;
+}
+main{
+    padding: 15px;
+    margin:15px auto;
+    max-width: 600px;
+    background-color: #eee;
+    border-radius: 15px;
+}
+footer, header{
+    text-align: center;
+    padding: 15px 0;
+    background-color: #000080;
+    color: #fff;
+}
+
+.prf label{
+    display: block;
+    padding-top: 20px;
+    color: #000080;
+    font-size: 16px;
+}
+
+.features{
+    display: grid;
+    padding-top: 16px;
+    color: #000080;
+    font-size: 16px;
+}
+div{
+    color: #000080;
+    font-size: 16px;
+    padding-top: 16px;
+}
+
+span{
+    color: #034e25;
+}
+.prf input[type="text"],
+.prf input[type="date"],
+.prf textarea,
+.prf select{
+    display: block;
+    background-color: #eee;
+    color: #222;
+    padding: 15px;
+    color: #06104b;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+}
+.prf textarea{
+    height: 50px;;
+}
+
+
+.prf input[type="checkbox"]{
+    margin:6px;
+}
+
+.star-rating{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 0;
+}
+
+.star-rating label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.prf input[type="submit"]{
+    padding: 15px;
+    border: 1px solid #555;
+    border-radius: 20px;
+    background-image: linear-gradient(#9c2c13,#6f200e);
+    color: #fff;
+    font-size: larger;
+    width: 96%;
+    max-width: 400px;
+    margin:16px 2% -16px 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+#lastmodified{
+    color:#ffd700;
+}
+
+.sub-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+    height: 180px;
+    background-color: #270bc4;
+    text-align: center;
+    color: #ffffff;
 }
