@@ -92,6 +92,23 @@ span{
     box-shadow: 1px 1px 4px #999;
 }
 
+.review-btn{
+    padding: 15px;
+    border-radius: 50px;
+    width: 50%;
+    align-self: center;
+    margin: 15px auto;
+}
+.review-btn a{
+    text-decoration: None;
+    font-size: larger;
+    font-weight: 700;
+    color: #000080;
+}
+.review-btn:hover{
+    background-image: linear-gradient(#d3c610,#d3d60d);
+}
+
 #lastmodified{
     color:#ffd700;
 }
@@ -101,7 +118,7 @@ span{
     flex-direction: column;
     justify-content: center;
     margin: 20px auto;
-    height: 180px;
+    height: auto;
     background-color: #270bc4;
     text-align: center;
     color: #ffffff;
