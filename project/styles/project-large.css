@@ -1,0 +1,134 @@
+@media only screen and (min-width: 800px){
+    .nav-mobile-link{
+        display: none;
+    }
+    .nav-mobile{
+        display: none;
+    }
+
+    /* Header Section Starts Here */
+    .nav-desktop{
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 40px;
+    }
+    nav ul a{
+        text-decoration: none;
+        font-weight: 500;
+        color: var(--tertiary2-color);
+    }
+    nav ul a:hover{
+        padding: 15px;
+        border-radius: 15px;
+        border: var(--border-color);
+    }
+
+
+    footer{
+        padding: 10px 30px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* Header Section ends Here */
+
+    /* Main-Home Section Starts Here */
+  
+
+    .home-info{
+        position: absolute;
+        top: 130px;
+        left: 70px;
+    }
+
+    .home-info h1{
+        background-color: transparent;
+        color: var(--tertiary2-color);
+        border-left: none;
+        border-right:none;
+        font-size: 60px;
+        line-height: 1.4;
+        font-weight: 500;
+    }
+
+    .home-info p{
+        font-size: larger;
+        line-height: 2.0;
+    }
+    /* Main-Home Section Ends Here */
+
+    /* About-Main Page */
+    .about-page{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .page{
+        padding-bottom: 40px;
+    }
+    .page .about-info{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .page img{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    /* Explore Page */
+    .explore img{
+        width: 100%;
+        height: auto;
+
+    }
+    .explore{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+    }
+    .explore h1{
+        grid-column: 1/4;
+    }
+    table{
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    /* Form Area */
+    .dish input[type="text"],
+    .dish input[type="tel"],
+    .dish input[type="date"],
+    .dish textarea,
+    .dish select{
+        padding: 15px;
+        max-width: 800px;
+       
+    }
+    .dish textarea{
+        height: 100px;
+    }
+
+    .dish input[type="submit"]{
+        max-width: 800px;
+    }
+
+    .serves {
+    max-width: 800px;
+    }
+
+    /* FAQ's Section */
+    .faq-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    }
+
+}

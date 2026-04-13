@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="author" content="Nweke Joshua">
+    <meta name="description" content="Get in touch with us for orders, reservation, catering, location details, or questions. We're always happy to hear from you.">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="company-logo">
+            <div class="logo-container">
+                <img class="logo" src="images/logo.png" alt="logo image">
+            </div>
+            <span class="foodplug-name">Jay Italian Foods</span>
+        </div>
+        
+        <nav class="nav-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li ><a href="contact.html">Visit Us</a></li>
+                <li><a href="faq.html">FAQ's</a></li>
+            </ul>
+        </nav>
+        <div class="nav-content">
+
+        </div>
+        <div class="nav-mobile">
+            <div class="hamburger">
+                <div id="bars"></div>
+            </div>
+        </div>
+        <ul class="nav-mobile-link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="explore.html">Explore Food</a></li>
+            <li><a href="contact.html">Visit Us</a></li>
+            <li><a href="faq.html">FAQ's</a></li>
+        </ul>
+    </header>
+
+    <main id="contact-main">
+           <div class="contact">
+               <h1>ADDRESS
+                <br> <span id="address">AND HOURS</span>
+               </h1>
+               <div id="hours">
+                <span>18B Tunde Badru Street, Ogun State <br> Nigeria. </span>
+                <span>Sunday 5PM - 9PM</span>
+                <span>Monday 4PM - 9PM</span>
+                <span>Tuesday-Thursday 11:30AM-2:30PM & 4PM-9PM</span>
+                <span>Sunday 5PM - 9PM</span>
+                <span>Sunday 5PM - 9PM</span>
+               </div>
+           </div>
+    
+           <section class="form">
+               <h1>Reservation</h2>
+               <div id="call-us">
+                <span><img src="images/call-icon.svg" alt="Phone Icon"></span>
+                <span>Call Us</span>
+               </div>
+
+                <form action="order.html" method="get" class="dish">
+                    <h2>Fill the Form to Make a Reservation or Place an Order 🍝</h2>
+                    <label for="name">Name* <input type="text" id="name" required placeholder="Enter Your Name"></label>
+                    <label for="email">Email* <input type="text" id="email" required placeholder="Enter Your Email"></label>
+                    <label for="phone">Phone No <input type="tel" id="phone" name="phone" placeholder="Enter Your Number"></label>
+                    
+                    <label for="orderName">Dish*
+                        <select id="orderName" required>
+                            <option value="" disabled selected>Select a Dish</option>
+                            <option value="001">Chicken Vesuvio</option>
+                            <option value="002">Pasta 'Ncasciata</option>
+                            <option value="003">Pork Chop Milanese</option>
+                            <option value="004">Soppressata Pizza</option>
+                            <option value="005">Italian Wedding Risotto</option>
+                            <option value="006">Agnolotti del Plin</option>
+                            <option value="007">Bolognese Meat Sauce</option>
+                            <option value="008">Braciole</option>
+                            <option value="009">Chicken Scarpariello</option>
+                        </select>
+                    </label>
+
+                    <div>Number of Serving</div>
+                    <div class="serves">
+                        <label for="one"><input type="radio" id="one" name="serves" value="1" required>One</label>
+                        <label for="two"><input type="radio" id="two" name="serves" value="2" required>Two</label>
+                        <label for="three"><input type="radio" id="three" name="serves" value="3" required>Three</label>
+                        <label for="family"><input type="radio" id="family" name="serves" value="4" required>Family</label>
+                    </div>
+                <label for="date">Date of Reservation* <input id="date" name="reservationDate" type="date" required></label>
+                <div class="features">Would you like to make an order or make a reservation<span>Check all that apply</span></div>
+                <label for="order"><input type="checkbox" id="order" name="order" value="yes"> Order</label>
+                <label for="reservation"><input type="checkbox" id="reservation" name="reservation" value="yes"> Reservation </label>
+ 
+                <label for="comment">Kindly state any allergy or anything you would like the chef to know.<span>(Optional)</span><textarea name="comment" id="comment" placeholder="Talk to us!"></textarea></label>
+    
+                <input type="submit" value="Place an Order">
+            </form>
+           </section>
+       
+    </main>
+
+
+
+    <footer>
+        <div class="info">
+            <p>©️<span id="currentyear"></span>🌺Nweke Joshua🌺Nigeria</p>
+            <p class="lastmodified"></p>
+        </div>
+        <div class="logo">
+            <a href="https://web.facebook.com"><img src="images/facebook.png" alt="Facebook Icon"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram Icon"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedin Icon"></a>
+        </div>
+
+        <a href="contact.html" class="btn">Book a Reservation</a>
+    </footer>
+    
+</body>
+</html>
