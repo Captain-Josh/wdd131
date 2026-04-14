@@ -1,6 +1,8 @@
+
 //Footer Section
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.querySelector(".lastmodified").textContent = `Last Modified ${document.lastModified}`
+
 
 //Hamburger Menu
 const hamburger = document.querySelector(".hamburger");
@@ -72,8 +74,10 @@ const italianDishes = [
     }
 ];
 
-
-function displayItalianDish(italianDishes){
+document.addEventListener("DOMContentLoaded", ()=>{
+  
+  if(document.getElementsByTagName("body")[0].id  === "explore-page"){
+    function displayItalianDish(italianDishes){
     const exploreDish = document.querySelector(".explore");
     exploreDish.innerHTML += ""
     for (const italianDish of italianDishes){
@@ -106,5 +110,34 @@ function displayTable(italianDishes) {
 tbody.innerHTML = rows;
 }
 displayTable(italianDishes);
+
+
+  }})
+
+
+
+// Order.HTML
+
+
+  document.addEventListener("DOMContentLoaded", ()=>{
+    if(document.getElementsByTagName("body")[0].id === "order-page"){
+      console.log(document.getElementsByTagName("body")[0].id);
+      let orderCount = localStorage.getItem("orderCount");
+  
+        if(orderCount === null){
+          orderCount =1;
+        }
+        else{
+          orderCount = Number(orderCount) +1;
+        }
+      localStorage.setItem("orderCount", orderCount);
+  
+     const countDisplay = document.getElementById("count");
+     countDisplay.innerHTML = `You have made ${orderCount} order(s)`;
+
+    };
+
+})
+
 
 
