@@ -102,6 +102,11 @@
         margin: 20px auto;
     }
 
+
+    /* Contact */
+    #contact-main{
+        padding: 30px 80px 20px 80px;
+    }
     /* Form Area */
     .dish input[type="text"],
     .dish input[type="tel"],
