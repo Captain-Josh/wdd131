@@ -194,6 +194,7 @@ ul{
     border-radius: 15px;
     font-size: large;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 #btn{
     padding: 15px;
