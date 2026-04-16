@@ -558,5 +558,6 @@ footer{
     background-color: var(--accent5-color);
     border-radius: 10px;
     text-decoration: none;
+    outline: none;
 }
 /* Footer Section ends Here */
