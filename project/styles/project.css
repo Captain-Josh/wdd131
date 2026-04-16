@@ -194,7 +194,6 @@ ul{
     border-radius: 15px;
     font-size: large;
     text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
 }
 #btn{
     padding: 15px;
@@ -215,6 +214,7 @@ ul{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    -webkit-tap-highlight-color: transparent;
 }
 .btn2{
     margin-left: 25px;
