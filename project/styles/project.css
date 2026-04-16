@@ -162,7 +162,6 @@ ul{
 .home-main img{
     width: 100%;
     height: auto;
-    margin: 15px;
 }
 
 .home-info{
@@ -177,6 +176,7 @@ ul{
     font-size: 45px;
     line-height: 1.1;
     font-weight: 500;
+    width: 100%;
 }
 
 .home-info p{
@@ -207,6 +207,15 @@ ul{
     color: var(--accent5-color);
     background-color: var(--accent3-color);
     border: var(--border-color);
+}
+
+#home-button{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.btn2{
+    margin-left: 25px;
 }
 /* Main-Home Section Ends Here */
 /* About-Main Page */
@@ -260,6 +269,7 @@ ul{
     color: var(--tertiary2-color);
     margin-bottom: 15px;
 }
+
 #explore-main{
     width: 80%;
     margin: 0 auto;
@@ -272,13 +282,22 @@ ul{
     color: var(--tertiary2-color);
 
 }
+.explore img{
+    width: 100%;
+    height: auto;
+
+}
 
 /* Table */
 table {
   border-collapse: collapse;
   border: var(--border);
   margin-bottom: 15px;
+  width: 100%;
+  table-layout: fixed;
 }
+
+
 
 td {
   padding: 10px;
@@ -320,7 +339,7 @@ caption {
     background-position: center;
     background-repeat: no-repeat;
     font-weight: 400;
-    padding: 30px 70px 20px 70px;
+    padding: 30px 40px 20px 40px;
 }
 
 .contact h1, .form h1{ 
